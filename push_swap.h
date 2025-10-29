@@ -6,7 +6,7 @@
 /*   By: sangseo <sangseo@student.42gyeongsan.kr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/17 11:18:17 by sangseo           #+#    #+#             */
-/*   Updated: 2024/11/18 15:10:29 by sangseo          ###   ########.fr       */
+/*   Updated: 2024/11/18 20:23:29 by sangseo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,13 +21,6 @@ typedef struct s_node
 	int				n;
 	struct s_node	*next;
 }	t_node;
-
-// typedef struct s_stack
-// {
-// 	int		size;
-// 	t_node	*front;
-// 	t_node	*back;
-// }	t_stack;
 
 t_node	*ft_lstnew(int n);
 void	ft_lstadd_back(t_node **lst, t_node *new);
@@ -48,7 +41,6 @@ int		get_min(t_node *lst);
 int		get_max(t_node *lst);
 int		find_median(t_node *lst, int flg, int min, int max);
 void	find_pivot(t_node **a, int pivot[4]);
-//void	get_topbot(t_node *b, int i, int pivot[4], int *top, int *bot);
 void	divide_pivot(t_node **a, t_node**b, int pivot[4]);
 int		find_min_node(t_node *lst);
 void	min_to_top(t_node **lst, int size);
@@ -59,12 +51,5 @@ void	pa_min(t_node **a, t_node **b, int min_idx);
 void	pa_flg(t_node **a, t_node **b, int min_idx, int flg);
 int		get_bn(t_node *b, int idx);
 void	insert_minflg(int *min, int m_in, int *flg, int f_in);
-
-//void	min_to_top(t_node **lst, int size, int *max_idx, int *max_top);
-// int		find_max_node(t_node *lst);
-// int		find_nextmax_node(t_node *a, int max_idx, int max_top);
-// void	over_idx_handling(int *idx, int size);
-// void	next_max_top(int *a_size, t_node **a, int *max_idx, int *max_top);
-// int		swap_flg(int a_size, int max_top, int next_max_idx);
 
 #endif

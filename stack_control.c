@@ -6,7 +6,7 @@
 /*   By: sangseo <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/05 13:51:07 by sangseo           #+#    #+#             */
-/*   Updated: 2024/08/14 18:26:43 by sangseo          ###   ########.fr       */
+/*   Updated: 2024/11/18 20:24:55 by sangseo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,29 +79,3 @@ void	stack_free(t_node *lst)
 		lst = temp;
 	}
 }
-/*
-#include <stdio.h>
-
-int main()
-{
-	int nl[] = {3, 2, 6};
-	int a = 7;
-	t_node	*ns;
-	t_node	*ns2;
-
-	ns = ft_lstnew(nl, 3);
-	while (ns)
-	{
-		printf("%d", (*ns).n);
-		ns = (*ns).next;
-		printf("\n");
-	}
-	ns2 = ft_lstnew(&a, 1);
-	while (ns2)
-	{
-		printf("%d", (*ns2).n);
-		ns2 = (*ns2).next;
-		printf("\n");
-	}
-}
-*/
